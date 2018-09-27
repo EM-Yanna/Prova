@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.usuarioController.java">
+   <children>
+      <Button fx:id="btnNovo" layoutX="278.0" layoutY="36.0" mnemonicParsing="false" onAction="#Novo" prefHeight="25.0" prefWidth="47.0" text="Novo" />
+      <Button fx:id="btnEditar" layoutX="387.0" layoutY="36.0" mnemonicParsing="false" text="Editar" />
+      <Button fx:id="btnRemover" layoutX="502.0" layoutY="36.0" mnemonicParsing="false" text="Remover" />
+      <TableView layoutX="37.0" layoutY="92.0" prefHeight="443.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="clmId" prefWidth="227.0" text="Id" />
+          <TableColumn fx:id="clmUsuario" prefWidth="266.0" text="Usuário" />
+            <TableColumn fx:id="clmEmail" prefWidth="206.0" text="E-mail" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
